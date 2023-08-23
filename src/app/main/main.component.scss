@@ -1,0 +1,87 @@
+
+
+:host ::ng-deep{
+
+
+    .p-dialog .p-dialog-header {
+        border-bottom: 0 none;
+        background: #dbeaf0;
+        color: #343a40;
+        padding-left: 10px;
+        width: 100%;
+        height: 20px;
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+        border-bottom: 1px solid #343a40;
+    }
+
+
+
+    #nav{
+        width :100%;
+        display: flex;
+        margin: 0px;
+        padding: 0%;
+        background-color: #DFEFF7;
+        border-bottom: 1px solid #343a40;
+    }
+    #nav .p-button{
+        background-color: #bfd9e4;
+        border-color: #537989;
+        color: #000000;
+        font-size: 8px;
+        font-weight: 200;
+        padding: 5px;
+        padding-left: 8px;
+        margin: 5px;
+    
+
+    }
+
+    .table-container {
+        width: 100%;
+        border: 1px solid grey;
+
+    }
+
+    #one {
+        width: 30%;
+    }
+
+    #two {
+        width: 60%;
+    }
+
+    #three {
+        display: flex;
+        width: 10%;
+    }
+
+    #cTable{
+        margin: 0%;
+        padding: 0%;
+        //background-color:blue;
+    }
+
+    .p-dialog .p-dialog-content {
+        padding: 0%;
+    }
+
+
+    #cCode{
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+    }
+    tbody, td,  th, thead, tr {
+        border-color: inherit;
+        border-style: solid;
+        /* border-width: 0; */
+        border: 1px solid grey;
+    }
+
+    i{
+        font-size: 0.8rem;
+    }
+    
+}

@@ -1,0 +1,202 @@
+<p-button (click)="showDialog()" icon="pi pi-external-link" label="Show"></p-button>
+<p-dialog header="Dialog" [(visible)]="dialogVisible" [breakpoints]="{ '960px': '75vw' }" [modal]="true"
+  [draggable]="false" [resizable]="false" [style]="{ width: '70vw', height: '60vw' }">
+
+  <ng-template pTemplate="header" styleClass="p-dialog-titlebar">
+    <span class="p-dialog-title">Client List</span>
+  </ng-template>
+
+
+  <ng-template pTemplate="body">
+
+    <div id="nav">
+      <p-button label="Add new record" (click)="showDialog1()">
+        <i class="pi pi-plus" style="font-size: 0.8rem; margin-right: 2px;"> </i>
+      </p-button>
+
+      <p-button icon="pi pi-file-pdf" label="export to excel">
+
+      </p-button>
+    </div>
+
+    <div id="cTable">
+
+
+      <table class="table table-striped table-container ">
+        <thead>
+          <tr>
+            <td id="one">
+              <div id="cCode">
+                <div class=""> </div>
+                <div class="">
+                  <h6> Client Code</h6>
+                </div>
+                <div> <i class="pi pi-ellipsis-v" style="font-size: 1rem"></i></div>
+
+              </div>
+            </td>
+            <td id="two">
+              <div id="cCode">
+                <div class=""> </div>
+                <div class="">
+                  <h6> Client Name</h6>
+                </div>
+                <div> <i class="pi pi-ellipsis-v" style="font-size: 1rem"></i></div>
+
+              </div>
+            </td>
+            <td id="three">
+
+
+            </td>
+          </tr>
+        </thead>
+
+
+        <tr>
+          <td id="one">PGR</td>
+          <td id="two">Petro gas E&P</td>
+          <td id="three"><p-button icon="pi pi-pencil" styleClass="small-button"></p-button><p-button
+              icon="pi pi-times-circle" styleClass="small-button"></p-button>
+          </td>
+        </tr>
+        <tr>
+          <td id="one">HCF</td>
+          <td id="two">Hydro Carbon Finder</td>
+          <td id="three"><p-button icon="pi pi-pencil" styleClass="small-button"></p-button><p-button
+              icon="pi pi-times-circle" styleClass="small-button"></p-button>
+          </td>
+        </tr>
+        <tr>
+          <td id="one">SGC</td>
+          <td id="two">Shuram Dubai</td>
+          <td id="three">
+            <p-button icon="pi pi-pencil" styleClass="small-button"></p-button><p-button styleClass="small-button"
+              icon="pi pi-times-circle"></p-button>
+          </td>
+        </tr>
+        <tr>
+          <td id="one">SOG</td>
+          <td id="two">Shuram Oil & Gas</td>
+          <td id="three"><p-button icon="pi pi-pencil" styleClass="small-button"></p-button><p-button
+              icon="pi pi-times-circle" styleClass="small-button"></p-button> </td>
+        </tr>
+        <tr>
+          <td id="one">PDO</td>
+          <td id="two">Petroleum Development Oman</td>
+          <td id="three"><p-button icon="pi pi-pencil" styleClass="small-button"></p-button><p-button
+              icon="pi pi-times-circle" styleClass="small-button"></p-button></td>
+        </tr>
+
+        <tr>
+          <td id="one">GCS</td>
+          <td id="two">Global Computer Services L.L.C</td>
+          <td id="three">
+            <p-button icon="pi pi-pencil" styleClass="small-button"></p-button><p-button icon="pi pi-times-circle"
+              styleClass="small-button"></p-button>
+          </td>
+        </tr>
+        <tr>
+          <td id="one">ROP</td>
+          <td id="two">Royal Oman Police</td>
+          <td id="three"> <p-button icon="pi pi-pencil" styleClass="small-button"></p-button><p-button
+              icon="pi pi-times-circle" styleClass="small-button"></p-button></td>
+        </tr>
+        <tr>
+          <td id="one">TON</td>
+          <td id="two">Tax Oman</td>
+          <td id="three"><p-button icon="pi pi-pencil" styleClass="small-button"></p-button><p-button
+              icon="pi pi-times-circle" styleClass="small-button"></p-button></td>
+        </tr>
+
+        <tr>
+          <td id="one">PGNL</td>
+          <td id="two">Petrogas E&P Netherlands</td>
+          <td id="three">
+            <p-button icon="pi pi-pencil" styleClass="small-button"></p-button><p-button icon="pi pi-times-circle"
+              styleClass="small-button"></p-button>
+          </td>
+        </tr>
+        <tr>
+          <td id="one">T</td>
+          <td id="two">Test</td>
+          <td id="three"><p-button icon="pi pi-pencil" styleClass="small-button"></p-button><p-button
+              icon="pi pi-times-circle" styleClass="small-button"></p-button> </td>
+        </tr>
+
+      </table>
+    </div>
+
+  </ng-template>
+
+
+</p-dialog>
+
+<!-- <p-button (click)="showDialog1()" icon="pi pi-external-link" label="New"></p-button> -->
+<p-dialog header="Dialog 1" [(visible)]="dialog1Visible" [draggable]="false" [resizable]="false" [modal]="true"
+  [style]="{ width: '50vw',  'border': 'none' }">
+
+
+  <ng-template pTemplate="header" [style]="{ 'padding' :'0',  'border-bottom': 'none' }">
+    <div id="head">
+      <span class="text-xl font-bold">Add Client</span>
+    </div>
+  </ng-template>
+
+
+  <ng-template pTemplate="body">
+    <div class="container  p-2">
+      <table class="table-container" style="border: none;">
+
+        <tr style="border: none;">
+          <td style="border: none;" id="one1">Client Code</td>
+          <td id="two1">:</td>
+          <td id="three1">
+            <p-inputNumber inputId="integeronly" [(ngModel)]="value1"> </p-inputNumber> <span style="color:red"> * Only
+              numbers accepted</span>
+          </td>
+        </tr>
+        <tr style="border: none;">
+          <td id="one1">Client Name</td>
+          <td id="two1">:</td>
+          <td id="three1"> <input type="text" pInputText [(ngModel)]="value2" /> <span style="color:red; "> *</span>
+          </td>
+        </tr>
+        <tr style="border: none;">
+          <td id="one1">Client Address</td>
+          <td id="two1">:</td>
+          <td id="three1"> <textarea rows="5" cols="30" pInputTextarea [(ngModel)]="value"></textarea>
+          </td>
+        </tr>
+        <tr style="border: none;">
+          <td id="one1">Phone number</td>
+          <td id="two1">:</td>
+          <td id="three1">
+            <p-inputMask mask="(999) 999-9999" [(ngModel)]="value3" placeholder="(999) 999-9999"></p-inputMask>
+          </td>
+        </tr>
+        <tr style="border: none;">
+          <td id="one1">Country</td>
+          <td id="two1">:</td>
+          <td id="three1"> <p-dropdown [options]="cities" [(ngModel)]="selectedCity" optionLabel="name"></p-dropdown>
+          </td>
+        </tr>
+        <tr style="border: none;">
+          <td id="one1">Focal Point</td>
+          <td id="two1">:</td>
+          <td id="three1"><input type="text" pInputText [(ngModel)]="value4" /></td>
+        </tr>
+      </table>
+    </div>
+  </ng-template>
+
+  <ng-template pTemplate="footer">
+    <div id="footer1">
+      <p-button label="Save" icon="pi pi-check" ></p-button>
+      <p-button label="Cancel" icon="pi pi-ban" styleClass="p-button-raised p-button-secondary"></p-button>
+
+    </div>
+  </ng-template>
+
+
+</p-dialog>

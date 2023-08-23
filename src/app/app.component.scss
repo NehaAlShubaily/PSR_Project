@@ -1,0 +1,83 @@
+#mainPage{
+    display: flex;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+#logo{ 
+   
+  align-items : center;
+    height :40px;
+    width: 40px;
+   // background-color: azure;
+   background-image:  url('https://cdn-icons-png.flaticon.com/128/4033/4033051.png');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+
+#edit{
+margin-right: 5px;
+    height :40px;
+    width: 40px;
+   // background-color: azure;
+   background-image:  url('https://cdn-icons-png.flaticon.com/128/10100/10100313.png' );
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+
+}
+
+#logout{
+margin-right: 20px;
+    height :40px;
+    width: 40px;
+   // background-color: azure;
+   background-image:  url('https://cdn-icons-png.flaticon.com/128/10309/10309341.png');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+
+}
+
+
+
+#headerTitle h3{
+   
+    margin-left: 20px;
+       color: white;
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#main{
+    
+    background-color: rgb(227, 247, 247);
+    height: 100vh;
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+  
+    padding-left: 25px;
+    margin: 0%;
+    width: 100%;
+    height :46px;
+    align-items: center;
+    background-color: green;
+}
+
+#nav{
+    width: 20%;
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    border: 3px solid rgb(241, 181, 27);
+    background-color: beige;
+
+}
+

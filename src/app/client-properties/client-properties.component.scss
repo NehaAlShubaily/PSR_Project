@@ -1,0 +1,168 @@
+:host ::ng-deep {
+
+    
+    .p-dialog .p-dialog-header {
+        border-bottom: 0 none;
+        background: #dbeaf0;
+        color: #343a40;
+        padding-left: 10px;
+        width: 100%;
+        height: 20px;
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+        border-bottom: 1px solid #343a40;
+    }
+
+
+
+    #nav{
+        width :100%;
+        display: flex;
+        margin: 0px;
+        padding: 0%;
+        background-color: #DFEFF7;
+        border-bottom: 1px solid #343a40;
+    }
+    #nav .p-button{
+        background-color: #bfd9e4;
+        border-color: #537989;
+        color: #000000;
+        font-size: 8px;
+        font-weight: 200;
+        padding: 5px;
+        padding-left: 8px;
+        margin: 5px;
+    
+
+    }
+
+    .table-container {
+        width: 100%;
+      
+
+    }
+
+    #one {
+        width: 30%;
+    }
+
+    #two {
+        width: 60%;
+    }
+
+    #three {
+        display: flex;
+        width: 10%;
+    }
+
+    #cTable{
+        margin: 0%;
+        padding: 0%;
+        //background-color:blue;
+    }
+
+    .p-dialog .p-dialog-content {
+        padding: 0%;
+    }
+
+
+    #cCode{
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+    }
+    tbody, td,  th, thead, tr {
+         border-color: inherit;
+        // border-style: solid;
+        // /* border-width: 0; */
+        border: 1px solid grey;
+    }
+
+    i{
+        font-size: 0.8rem;
+    }
+    
+
+    .small-button {
+       
+        padding: 8px 8px;
+        font-size: 12px;
+      }
+
+//---------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------
+    //------------------------------------------------------------------------------------------------
+
+
+    
+   
+
+    #one1 {
+        width: 30%;
+      border: none;
+      
+    }
+
+    #two1 {
+        width: 10%;
+        border: none;
+    }
+
+    #three1 {
+        width: 60%;
+        border: none;
+        justify-content: left;
+        align-items: start;
+    }
+
+    .p-dialog .p-dialog-footer {
+        margin: 0px !important;
+        padding: 0;
+    }
+
+    .p-dialog .p-dialog-footer #footer1 button {
+        width: 45px;
+        height: 20px;
+        font-size: 12px;
+    }
+
+    .p-dialog .p-dialog-header {
+        padding: 8px;
+
+        background-color: #ccc;
+        border-bottom: 2px solid #010000;
+    }
+
+
+
+    .p-dialog {
+        margin: 0px;
+        padding: 0%;
+
+    }
+
+
+
+
+
+
+
+    .p-dialog .p-dialog-footer #footer1 .p-button {
+        height: 50px;
+        width: 95px;
+        padding: 5px;
+        margin-left: 10px;
+    }
+
+    .p-dialog .p-dialog-footer #footer1 {
+
+        margin: 0%;
+        border-top: 2px solid #010000;
+        padding: 2px;
+        background-color: #ccc;
+    }
+
+
+
+}
